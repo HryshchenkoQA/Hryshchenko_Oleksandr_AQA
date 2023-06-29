@@ -21,6 +21,7 @@ print(welcome_message.title())
 Змініть значення своєї змінної, яку ви створили на кроці 1 , додавши до свого імені декілька пробілів на початку та вкінці.
 Прослідкуйте щоб \t \n зустрічались хоча б один раз. Виведіть нове значення. Видаліть пропуски і збережіть новий результат.
 '''
-modified_full_name = first_name.lstrip().rstrip().title() + ' ' + last_name.lstrip().rstrip().title()
-welcome_message = '\tWelcome back, dear' + ' ' + modified_full_name + ' ' + '\nGlad to see you again:)'
-print(welcome_message)
+modified_full_name = first_name.lstrip().rstrip() + ' ' + last_name.lstrip().rstrip()
+welcome_message = '\twelcome back, dear' + ' ' + modified_full_name + ' ' + '\nglad to see you again:)'
+welcome_message1 =welcome_message.capitalize()
+print(welcome_message1)
