@@ -25,3 +25,5 @@ print("Студенти з балами вище середнього:")
 for student in above_average_students:
     print(student)
 
+
+

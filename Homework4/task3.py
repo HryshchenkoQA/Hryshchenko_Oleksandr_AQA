@@ -28,3 +28,5 @@ location = ['USA', 'Canada', 'Ukraine', 'Poland', 'Moldova', 'England', 'Scotlan
 
 random_person = generate_random_person(name, surname, location)
 print(random_person)
+
+
