@@ -61,7 +61,7 @@ unique_values = {'A', 2,3,4,'B'}
 list_with_doubles = ['a','a',1,1,2,2,3,3,4]
 new_set = set(list_with_doubles)
 list_with_doubles = list(new_set)
-print(list_with_doubles)
+print(list_with_doubles)                #оставить только уникальные значения
 print(len(unique_values))
 second_unique_values = {2,3,4}
 print(16 not in unique_values)

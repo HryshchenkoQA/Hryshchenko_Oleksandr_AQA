@@ -1,11 +1,8 @@
 notes = []
-
-
 def add_note():
     note = input("Введіть нотатку: ")
     notes.append(note)
     print("Нотатка додана.")
-
 
 def view_notes(order):
     if order == "earliest":
@@ -20,9 +17,19 @@ def view_notes(order):
         print("Неправильний вибір. Будь ласка, спробуйте ще раз.")
         return
 
-    print(f"Від {order} до най{'пізнішої' if order in ['earliest', 'latest'] else 'коротшої'}:")
+def print_result(order):
+    if order == 'earliest':
+        print(f"from {order} to latest")
+    elif order == 'latest':
+        print(f"from {order} to earliest")
+    elif order == 'shortest':
+        print(f"from {order} to longest")
+    elif order == 'longest':
+        print(f"from {order} to shortest")
+
     for note in sorted_notes:
-        print(note)
+        print(note)   
+
 
 
 while True:
