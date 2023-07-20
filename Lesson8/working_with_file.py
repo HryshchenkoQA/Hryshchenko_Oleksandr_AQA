@@ -1,7 +1,10 @@
-# file2 = open('a.txt', 'w')
-# file2.write('New line written by me')   #write полностью перезаписывает
-#
-# file2.close()
+'''
+file2 = open('a.txt', 'w')
+file2.write('New line written by me')   #write полностью перезаписывает
+
+file2.close()
+'''
+
 
 file1 = open('a.txt', 'r')
 our_lines = file1.read()
