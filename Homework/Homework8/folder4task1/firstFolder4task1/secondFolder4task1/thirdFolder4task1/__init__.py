@@ -1,0 +1,1 @@
+from .third_incredible_function import choice
