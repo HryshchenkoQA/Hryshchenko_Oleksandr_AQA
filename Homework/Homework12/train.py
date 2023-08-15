@@ -57,8 +57,8 @@ car2 = TrainCar(2, 20)
 train.add_car(car1)
 train.add_car(car2)
 
-passenger1 = Person("John Doe", "Paris", 1)
-passenger2 = Person("Jane Doe", "Istanbul", 2)
+passenger1 = Person("Billy Butcher", "Paris", 1)
+passenger2 = Person("Nicolas Cage", "Istanbul", 2)
 
 car1.add_passenger(passenger1)
 car2.add_passenger(passenger2)
