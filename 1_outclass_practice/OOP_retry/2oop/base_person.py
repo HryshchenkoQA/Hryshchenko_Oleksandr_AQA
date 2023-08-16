@@ -19,7 +19,7 @@ class Person():
         self.weight = kg
 
 class Warrior(Person):
-    '''Create warrior class'''
+    '''Create warrior class_tests'''
 
     def __init__(self, name, age, height):
         ''' инициализируем атрибуты родительского класса (Персон)'''

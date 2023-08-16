@@ -1,5 +1,5 @@
 '''
-class Human:
+class_tests Human:
     name = 'Andy'
     age = 30
     adress = []

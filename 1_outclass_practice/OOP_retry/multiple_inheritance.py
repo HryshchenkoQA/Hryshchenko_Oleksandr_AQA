@@ -23,19 +23,19 @@ print(mul1.print_strenght())
 
 
 
-# class Human:
+# class_tests Human:
 #     def m(self):
 #         print('A')
 #
-# class Child1(Human):
+# class_tests Child1(Human):
 #     def m(self):
 #         print('B')
 #
-# class Child2(Human):
+# class_tests Child2(Human):
 #     def m(self):
 #         print('C')
 #
-# class GrandChild(Child1, Child2):
+# class_tests GrandChild(Child1, Child2):
 #     def m(self):
 #         print('D')
 #

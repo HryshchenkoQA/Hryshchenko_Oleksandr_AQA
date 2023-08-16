@@ -1,4 +1,4 @@
-# class Person():
+# class_tests Person():
 #     '''инициализируем атрибуты человека'''
 #
 #     def __init__(self, name, age, height):
@@ -20,7 +20,7 @@
 
 
 class Warrior(Person):
-    '''Create warrior class'''
+    '''Create warrior class_tests'''
 
     def __init__(self, name, age, height):
         ''' инициализируем атрибуты родительского класса (Персон)'''

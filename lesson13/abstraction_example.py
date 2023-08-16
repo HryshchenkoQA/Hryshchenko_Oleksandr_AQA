@@ -8,7 +8,7 @@ class Employee(ABC):
     def do_work(self):
         pass
         #raise NotImplementedError('Not implemented error')
-# class Toyota_employee(Employee):
+# class_tests Toyota_employee(Employee):
 #     def __init__(self,salary, position):
 #         super().__init__(salary, position)
 
