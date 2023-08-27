@@ -47,9 +47,9 @@ def test_04_check_price():
 # def test_05_check_iphone_color():
 #     driver = Chrome()
 #     driver.get("https://rozetka.com.ua/ua/apple-iphone-14-pro-128gb-deep-purple/p352490706/")
-#     check_color_locator = '//*[@class="var-options__label"]/text()'
+#     check_color_locator = '//p[@class="var-options__label"]/text()'
 #     check_color = driver.find_element(by='xpath', value=check_color_locator)
-#     assert check_color == "Purple"
+#     assert check_color.text == "Purple"
 #     time.sleep(5)
 
 
