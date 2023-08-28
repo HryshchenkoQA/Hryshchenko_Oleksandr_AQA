@@ -17,15 +17,16 @@ class MainPage(BasePage):
         element = self.wait_until_element_appears(locator)
         element.click()
 
-    def go_to_apple_gadgets(self):
-        locator = ('xpath', '//input[@id="searchQuery"]')
+    def go_to_credits(self):
+        locator = ('xpath', '//*[@id="subMenu"]/li[2]/a')
         element = self.wait_until_element_appears(locator)
         element.click()
 
-    def click_to_finder(self):
-        locator = ('//*[@id="searchQuery"]')
+    def go_to_delivery(self):
+        locator = ('xpath', '//*[@id="subMenu"]/li[3]/a')
         element = self.wait_until_element_appears(locator)
         element.click()
+
 
 
 
