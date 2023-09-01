@@ -7,6 +7,12 @@ class MonaLisa:
         self.size = size
         self.smile = True
 
-mona_lisa_1 = MonaLisa()
-
-
+mona_lisa_1 = MonaLisa(12, 'Da Vinci', 'large')
+mona_lisa_2 = MonaLisa(200, 'poorboy', 'large')
+print(mona_lisa_1.author)
+print(mona_lisa_2.author)
+mona_lisa_1.age = 201
+del mona_lisa_1
+del mona_lisa_2
+mona_lisa_3 = MonaLisa(350, 'printer', 'small')
+print(mona_lisa_3.age )
