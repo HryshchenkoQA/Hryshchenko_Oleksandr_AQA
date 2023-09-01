@@ -1,5 +1,5 @@
 from selenium.webdriver import Chrome
-from lesson20.pages.dashbord_page import Dashbord
+from lesson20.pages.dashboard_page import Dashboard
 from lesson20.pages.category_page import CategoryPage
 import pytest
 
@@ -16,8 +16,7 @@ def driver():
 @pytest.fixture
 def dashboard(driver):
     driver.get('https://lordofboards.com.ua/')
-    yield Dashbord(driver)
-
+    yield Dashboard(driver)
 
 @pytest.fixture
 def categories(driver):

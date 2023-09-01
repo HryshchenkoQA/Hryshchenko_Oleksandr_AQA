@@ -1,7 +1,6 @@
 from lesson20.pages.base_page import BasePage
 from lesson20.pages.product_page import ProductPage
-from lesson20.core.category_locators import CategoriesLocator
-
+from lesson20.core.categories_locators import CategoriesLocator
 
 class CategoryPage(BasePage):
     def __init__(self, driver):
@@ -14,3 +13,4 @@ class CategoryPage(BasePage):
 
     def filter_new(self):
         self.click_on_element(self.locators.checkbox_new)
+
