@@ -1,3 +1,5 @@
+import time
+
 from lesson20.pages.base_page import BasePage
 
 
@@ -16,4 +18,5 @@ class Dashbord(BasePage):
     def search_for_game(self, message):
         locator = ('xpath', '//input[@class="search__input"]')
         self.send_keys_intro_field(locator, message)
+        time.sleep(5)
         self.press_enter(locator)

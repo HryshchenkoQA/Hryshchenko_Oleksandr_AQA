@@ -11,7 +11,6 @@ class BasePage:
     def wait_until_element_appears(self, locator):
         return self._web_driver_wait.until(EC.presence_of_element_located(locator))
 
-
     def click_on_element(self, locator):
         self.wait_until_element_appears(locator).click()
 
@@ -20,3 +19,5 @@ class BasePage:
 
     def press_enter(self, locator):
         self.wait_until_element_appears(locator).send_keys(Keys.ENTER)
+
+
