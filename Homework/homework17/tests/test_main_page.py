@@ -1,6 +1,4 @@
 import time
-
-
 from Homework.homework17.conftest import main_page, driver
 
 def test01_go_to_sales_and_discount(main_page):

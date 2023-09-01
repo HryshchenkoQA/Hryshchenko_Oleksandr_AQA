@@ -1,6 +1,10 @@
 import time
 from lesson20.conftest import dashboard, driver
 
-def test_go2_sales_and_discount(dashboard):
-    dashboard.go_to_sales_and_discounts()
+
+def test01_go_to_comics_and_books(dashboard):
+    dashboard.go_to_comics_and_books()
+    time.sleep(5)
+def test02_go_to_loign_form(dashboard):
+    dashboard.go_to_login_form()
     time.sleep(5)

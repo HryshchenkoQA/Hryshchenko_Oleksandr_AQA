@@ -11,7 +11,6 @@ import pytest
 @pytest.fixture(scope='session')
 def driver():
     driver = Chrome()
-    driver.get('https://touch.com.ua/')
     driver.maximize_window()
 
     yield driver
@@ -20,4 +19,5 @@ def driver():
 
 @pytest.fixture()
 def main_page(driver):
+    driver.get('https://touch.com.ua/')
     yield MainPage(driver)

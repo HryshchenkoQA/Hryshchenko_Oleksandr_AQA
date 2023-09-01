@@ -23,7 +23,7 @@ class MainPage(BasePage):
         element.click()
 
     def click_to_finder(self):
-        locator = ('//*[@id="searchQuery"]')
+        locator = ('xpath', '//*[@id="searchQuery"]')
         element = self.wait_until_element_appears(locator)
         element.click()
 
