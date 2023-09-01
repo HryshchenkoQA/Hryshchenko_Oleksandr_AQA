@@ -16,7 +16,9 @@ class Dashbord(BasePage):
         self.click_on_element(locator)
 
     def search_for_game(self, message):
-        locator = ('xpath', '//input[@class="search__input"]')
-        self.send_keys_intro_field(locator, message)
-        time.sleep(5)
-        self.press_enter(locator)
+        search_input_locator = ('xpath', '//input[@class="search__input"]')
+        first_result_element_locator = ('xpath', '//div[@class="search-results__title"]')
+        self.send_keys_intro_field(search_input_locator, message)
+        self.wait_until_element_appears(first_result_element_locator)
+        # time.sleep(5)
+        self.press_enter(search_input_locator)
