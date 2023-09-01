@@ -16,3 +16,7 @@ def test03_go_to_apple_gadgets(main_page):
 def test04_click_to_finder(main_page):
     main_page.click_to_finder()
     time.sleep(3)
+
+def test05_find_iphone(main_page):
+    main_page.find_iphone('Iphone 14 pro')
+    time.sleep(5)

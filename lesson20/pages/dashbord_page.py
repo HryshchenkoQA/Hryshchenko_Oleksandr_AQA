@@ -7,10 +7,13 @@ class Dashbord(BasePage):
 
     def go_to_comics_and_books(self):
         locator = ('xpath', '/html/body/div[2]/div[1]/div/div[3]/div/div/div/div/div/ul/li[1]/div[1]/a')
-        element = self.wait_until_element_appears(locator)
-        element.click()
+        self.click_on_element(locator)
 
     def go_to_login_form(self):
         locator = ('xpath', '/html/body/div[2]/div[1]/div/div[2]/div/div/div[3]/div[1]/div/div/a')
-        element = self.wait_until_element_appears(locator)
-        element.click()
+        self.click_on_element(locator)
+
+    def search_for_game(self, message):
+        locator = ('xpath', '//input[@class="search__input"]')
+        self.send_keys_intro_field(locator, message)
+        self.press_enter(locator)
