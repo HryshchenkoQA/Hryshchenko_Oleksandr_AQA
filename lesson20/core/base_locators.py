@@ -1,3 +1,5 @@
+
+
 class BaseLocator:
     def __init__(self):
         self.login = ('xpath', '//a[@title="Вхід"]')
