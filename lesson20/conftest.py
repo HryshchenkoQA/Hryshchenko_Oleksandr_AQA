@@ -1,8 +1,7 @@
 from selenium.webdriver import Chrome
 from lesson20.pages.dashbord_page import Dashbord
+from lesson20.pages.category_page import CategoryPage
 import pytest
-
-from selenium.webdriver.support.wait import WebDriverWait
 
 
 @pytest.fixture(scope='session')
@@ -17,5 +16,10 @@ def driver():
 @pytest.fixture
 def dashboard(driver):
     driver.get('https://lordofboards.com.ua/')
-
     yield Dashbord(driver)
+
+
+@pytest.fixture
+def categories(driver):
+    driver.get('https://lordofboards.com.ua/komiksy-i-knigi/')
+    yield CategoryPage(driver)
