@@ -1,8 +1,6 @@
 from Homework.homework17.pages.base_page_touch import BasePage
 
 
-
-
 class MainPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
@@ -27,4 +25,3 @@ class MainPage(BasePage):
         locator = ('xpath', '//*[@id="searchQuery"]')
         self.send_keys_intro_field(locator, message)
         self.press_enter(locator)
-

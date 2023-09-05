@@ -1,6 +1,7 @@
 import time
-from lesson20.conftest import categories, driver
 from lesson20.conftest import dashboard, driver
+from lesson20.conftest import categories, driver
+
 
 def test_go_to_first_result(dashboard):
     category_page = dashboard.go_to_comix_and_books()
