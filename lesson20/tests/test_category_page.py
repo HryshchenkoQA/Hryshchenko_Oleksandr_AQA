@@ -1,6 +1,7 @@
 import time
-from lesson20.conftest import categories, driver
 from lesson20.conftest import dashboard, driver
+from lesson20.conftest import categories, driver
+
 
 def test_go_to_first_result(dashboard):
     category_page = dashboard.go_to_comix_and_books()
@@ -17,4 +18,9 @@ def test_filtered_new(dashboard):
 def test_filtered_new_start_from_categories(categories):
     categories.filter_new()
     product_page = categories.go_to_first_result()
+    time.sleep(5)
+
+def test_count_products_elements_on_page(categories):
+    list_of_elements = categories.wait_until_list_of_elements_appears(categories.locators.results)
+    assert len(list_of_elements) == 20
     time.sleep(5)
