@@ -1,6 +1,4 @@
 import time
-from lesson20.conftest import dashboard, driver
-from lesson20.conftest import categories, driver
 
 
 def test_go_to_first_result(dashboard):

@@ -1,5 +1,4 @@
 import time
-from lesson20.conftest import dashboard, driver
 
 
 def test_go_to_books_and_comix(dashboard):
